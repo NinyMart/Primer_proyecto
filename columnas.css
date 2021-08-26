@@ -1,0 +1,16 @@
+nav {
+    background-color: cadetblue;
+    padding: 20px;
+}
+
+.columna {
+    background-color: brown;
+    color: burlywood;
+    padding: 20px;
+    width: 25%;
+    margin: 10px;
+}
+
+.padre {
+    display: flex;
+}

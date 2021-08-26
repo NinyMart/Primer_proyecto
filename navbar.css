@@ -1,0 +1,109 @@
+body {
+    font-family: 'Georama', sans-serif;
+}
+
+h2 {
+    font-weight: 900;
+}
+
+.shingeky {
+    display: inline-block;
+    background-color: rgb(141, 187, 187);
+    color: cornsilk;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.shingeky:hover {
+    background-color: darkcyan;
+}
+
+nav {
+    background-color: rgb(204, 199, 199);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    /* otras opciones para justificar son:
+    justify-content: flex-end; para ponerlo al final
+    justify-content: space-between; para ponerlo sin espacio en las esquinas */
+}
+
+.nav-button {
+    background-color: darkcyan;
+    color: white;
+    padding: 10px 0px;
+    border: 2px solid white;
+    display: none;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.columna {
+    background-color: rgb(236, 228, 228);
+    color: #333;
+    border: 1px solid #333;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgb(160, 159, 159);
+    width: 23%;
+    box-sizing: border-box;
+}
+
+.precio {
+    color: darkcyan;
+    font-size: 50px;
+}
+
+.btn-precio {
+    display: block;
+    background-color: salmon;
+    color: cornsilk;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.btn-precio:hover {
+    background: rgb(179, 91, 62);
+    color: cornsilk;
+}
+
+@media (max-width: 1070px) {
+    .columna {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+    .shingeky {
+        margin: 10px;
+    }
+    .nav-button {
+        display: inline-block;
+    }
+    .desaparece {
+        display: none;
+    }
+    .columna {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

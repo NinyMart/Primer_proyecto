@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+
+<body>
+    <nav>
+        <button class="nav-button" onclick="accion()">menú de isla paraiso</button>
+        <a href="#" class="shingeky desaparece">armin</a>
+        <a href="#" class="shingeky desaparece">historia</a>
+        <a href="#" class="shingeky desaparece">eren</a>
+        <a href="#" class="shingeky desaparece">mikasa</a>
+    </nav>
+
+    <script>
+        function accion() {
+            console.log('este boton funciona')
+            var ancla = document.getElementsByClassName('shingeky');
+            console.log(ancla)
+            for (var i = 0; i < ancla.length; i++) {
+                ancla[i].classList.toggle('desaparece');
+            }
+        }
+    </script>
+
+    <section class="container flex text-center">
+        <div class="columna">
+            <h2>personaje uno</h2>
+            <p class="precio">$500</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+            <hr>
+            <p>Lorem ipsum doloremque</p>
+            <p>Lorem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus labore voluptate Architecto</p>
+            <hr>
+            <a href="#" class="btn-precio">comprar</a>
+        </div>
+        <div class="columna">
+            <h2>personaje dos</h2>
+            <p class="precio">$500</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+            <hr>
+            <p>Lorem ipsum doloremque</p>
+            <p>Lorem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus labore voluptate Architecto</p>
+            <hr>
+            <a href="#" class="btn-precio">comprar</a>
+        </div>
+        <div class="columna">
+            <h2>personaje tres</h2>
+            <p class="precio">$500</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+            <hr>
+            <p>Lorem ipsum doloremque</p>
+            <p>Lorem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus labore voluptate Architecto</p>
+            <hr>
+            <a href="#" class="btn-precio">comprar</a>
+        </div>
+        <div class="columna">
+            <h2>personaje cuatro</h2>
+            <p class="precio">$500</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+            <hr>
+            <p>Lorem ipsum doloremque</p>
+            <p>Lorem.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus labore voluptate Architecto</p>
+            <hr>
+            <a href="#" class="btn-precio">comprar</a>
+        </div>
+    </section>
+</body>
+
+</html>

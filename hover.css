@@ -1,0 +1,20 @@
+button{
+    background: crimson;
+    color: white;
+}
+button:hover{
+    background: darksalmon;
+    color: gainsboro;
+}
+button:active{
+    background: white;
+}
+/* pasar un elemnto de linea a bloque */
+.unito{
+    display: inline-flex;
+    background-color: blueviolet;
+}
+.holi{
+    display: block;
+    background-color: rebeccapurple;
+}

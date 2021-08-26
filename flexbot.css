@@ -1,0 +1,35 @@
+.contenedor {
+    width: 80%;
+    /* height: 500px; */
+    background: violet;
+    margin: 50px auto;
+    display: flex;
+    /* display flex es para cambiar de cuando las cosas estan hacia abajo moverlas hacia el lado o alreves */
+    /* flex-direction: row;
+    alinea a la izquierda */
+    flex-direction: row;
+    /* alinea a la derecha  */
+    /* flex-direction: column;
+    este se utiliza para cuando este en modo responsive y quieras que se vea hacia abajo en los medias queri */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* este es para justificar los hijos a un lado, al otro o al centro */
+    align-items: center;
+    /* este es para alinear los elemntos arriba o abajo o en el centro */
+    /* align-items: stretch;     este sirve para hacer que los hijos ocupen el total del padre, esto es cuando n tiene width/altura */
+    /* align-items: baseline;    en este se alinea todo segun la tipografia haci se una mas gende que la otra */
+    /* align-content: flex-end;   este es para cuando hay varios hijos y quieres que sena dos filas */
+    /* align-content: space-around;  este es para poner una fila arriba y otra abajo sin respetar paddings */
+}
+
+.hijo {
+    width: 200px;
+    height: 100px;
+    background: rgb(90, 84, 80);
+    margin: 30px;
+    color: burlywood;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+    flex-grow: 1;
+}
